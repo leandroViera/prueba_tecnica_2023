@@ -1,0 +1,50 @@
+<div class="form-container">
+
+    <p class="form-title">{{title}}</p>
+    <hr style="margin: 0px;">
+    <form [formGroup]="productForm" (ngSubmit)="validateRegistration()">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="id">ID: </label>
+                <input id="id" type="number" formControlName="id" (blur)="validateInputId()" #inputId>
+            </div>
+            <div class="form-group">
+                <label for="name">Nombre: </label>
+                <input id="name" type="text" formControlName="name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="description">Descripci&oacute;n: </label>
+                <input id="description" type="text" formControlName="description">
+            </div>
+            <div class="form-group">
+                <label for="logo">Logo: </label>
+                <input id="logo" type="text" formControlName="logo">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="releaseDate">Fecha Liberaci&oacute;n: </label>
+                <input id="releaseDate" type="date" formControlName="releaseDate"
+                    (change)="calculateRevisionDate($event)">
+            </div>
+            <div class="form-group">
+                <label for="revisionDate" [attr.disabled]="true">Fecha Revisi&oacute;n: </label>
+                <input id="revisionDate" type="date" formControlName="revisionDate" #inputRevisionDate>
+            </div>
+        </div>
+        <div class="form-row form-actions">
+            <app-button
+                [customStyle]=" { 'width' : '98px' , 'height' : '48px' , 'backgroundColor' : '#e4e9ee', 'color':'black' }"
+                [customTitle]="'Reiniciar'" [customType]="'button'" (click)="clearForm()">
+            </app-button>
+            <app-button
+                [customStyle]=" { 'width' : '112px' , 'height' : '48px' , 'backgroundColor' : '#00203f', 'color':'white' }"
+                [customTitle]="'Enviar datos'" [customType]="'submit'">
+            </app-button>
+        </div>
+
+    </form>
+
+</div>

@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+thead {
+    background-color: #f7fbfe;
+    font-size: 12px;
+    text-align: left;
+}
+
+th {
+    padding: 14px
+}
+
+td {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #f1f1f1;
+    font-size: 12px;
+    padding-left: 14px;
+}
+
+.logo-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c5c7db;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.options {
+    cursor: pointer;
+}

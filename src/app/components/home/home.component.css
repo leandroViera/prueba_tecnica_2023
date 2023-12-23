@@ -1,0 +1,26 @@
+.main-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-actions {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.product-actions app-button,
+product-search {
+    display: inline-block;
+}
+
+.product-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 35px;
+    padding-top: 40px;
+    border: #ddd;
+}

@@ -1,0 +1,14 @@
+<div class="main-container">
+    <div class="product-actions">
+        <app-input [customPlaceholder]="'Search...'" [customStyle]="{ 'width': '180px', 'height': '25px' }"
+            (keyup)="searchProduct($event)"></app-input>
+        <app-button [customStyle]="{ 'width': '95px', 'height': '48px', 'backgroundColor': '#00203f' }"
+            [customTitle]="'Agregar'" (click)="showRegister()">
+        </app-button>
+    </div>
+    <div class="product-container">
+        <app-product-list
+            [headers]="['Logo','Nombre del producto','Descripci&oacute;n','Fecha de liberaci&oacute;n','Fecha de reestructuraci&oacute;n']">
+        </app-product-list>
+    </div>
+</div>

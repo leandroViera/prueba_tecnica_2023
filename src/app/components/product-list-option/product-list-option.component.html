@@ -1,0 +1,7 @@
+<div class="edit-options" (click)="toggleOptions()">
+    ⋮
+    <div *ngIf="showOptions" class="options-dropdown">
+        <div class="option" (click)="edit()">Editar</div>
+        <div class="option" (click)="delete()">Eliminar</div>
+    </div>
+</div>

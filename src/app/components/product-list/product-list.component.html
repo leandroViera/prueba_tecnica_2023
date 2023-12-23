@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <ng-container *ngFor="let column of headers">
+                <th>{{column}}</th>
+            </ng-container>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of financialProducts">
+                <td><span class="logo-icon">{{ product.logo.slice(0,2) }}</span></td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.releaseDate }}</td>
+                <td>{{ product.revisionDate }}</td>
+                <td><app-edit-options [customId]="product.id"></app-edit-options></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

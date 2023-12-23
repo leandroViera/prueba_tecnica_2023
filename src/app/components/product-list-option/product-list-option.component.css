@@ -1,0 +1,37 @@
+.edit-options {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .options-dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc; /* Agregamos un borde para mejorar la apariencia */
+    border-radius: 4px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para evitar que las opciones sobresalgan */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+  
+  .edit-options:hover .options-dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .option {
+    cursor: pointer;
+    padding: 8px; /* Ajustamos el espaciado para mejorar la apariencia */
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0; /* Cambiamos el color de fondo al pasar el ratón sobre una opción */
+  }
