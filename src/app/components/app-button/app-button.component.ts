@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app-button.component.css']
 })
 export class AppButtonComponent {
-  @Input() customTitle: string = "Button";
+  @Input() customTitle: string;
   @Input() customStyle: { width: string, height: string, backgroundColor: string, color?: string };
-  @Input() customType?: string;
+  @Input() customType?: string = "button";
 }
